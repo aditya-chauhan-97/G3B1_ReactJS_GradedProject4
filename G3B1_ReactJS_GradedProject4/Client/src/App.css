@@ -1,0 +1,127 @@
+.text-xs {
+    font-size: 0.625rem;
+}
+
+.text-sm {
+    font-size: 0.8rem;
+}
+
+.text-lg {
+    font-size: 1.2rem;
+}
+
+.search {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    min-width: 100%;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 3px 2px #ccc;
+    overflow: hidden;
+}
+
+.search .icon {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    left: .5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adinav{
+    background-color: #cc9900;
+}
+
+.search .icon .searchIcon {
+    color: #777;
+}
+
+.search .input {
+    position: relative;
+    width: 13rem;
+    height: 2rem;
+    left: .5rem;
+}
+
+.search .input .mySearch {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .mySearch input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.detailsImage{
+    height: 30rem;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 8rem;
+    height: 3rem;
+    margin: 1rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.back:hover{
+    color: #192bc2;
+    box-shadow: 0 0 3px 2px #ccc;
+}
+
+.noResults>p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+    color: #777;
+    margin: 1rem;
+}
+
+/* #################################### media queries for responsiveness #################################### */
+
+@media only screen and (max-width: 1200px) {
+    :root {
+        font-size: 85%;
+    }
+    .detailsImage{
+        height: 28rem;
+        margin: 2rem auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .search {
+        width: 100%;
+    }
+
+    .search .input {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    :root {
+        font-size: 65%;
+    }
+}
